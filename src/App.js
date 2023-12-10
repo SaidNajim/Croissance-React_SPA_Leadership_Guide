@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Title from './Title';
+import Level from './Level';
+import Problem from './Problem';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* I COULS USE : Webkit transform & animation & keyframe */}
+      {/* Just Squash - Composition */}
+      {/* Title : logo + Name of the problem */}
+      <Title />
+      {/* Level : indicator */}
+      <Level />
+      {/* Illustration + explication + Decision*/}
+      <Problem />
+      {/* Explication + Next */}
     </div>
   );
 }
