@@ -1,0 +1,72 @@
+[
+  {
+    "level": "1: Faire confiance",
+    "situation": "Un membre de l'équipe suggère de modifier légèrement le processus de cuisson pour améliorer la texture du pain",
+    "choice1": "Refusez la suggestion",
+    "choice2": "Discuter la suggestion",
+    "explication": "Un leader doit savoir faire confiance à son équipe pour favoriser l'innovation."
+  },
+  {
+    "level": "2: Objectifs clairs",
+    "situation": "Vous souhaitez améliorer la productivité de l'équipe. Vous allez poser un objectif",
+    "choice1": "Global",
+    "choice2": "SMART",
+    "explication": "Un leader efficace fixe des objectifs clairs et réalisables."
+  },
+  {
+    "level": "3: Valeurs de l'entreprise",
+    "situation": "Votre boulangerie privilégie la durabilité. Votre fournisseur utilise des emballages non écologiques. Préférez-vous maintenir ou changer de fournisseurs?",
+    "choice1": "Maintenir",
+    "choice2": "Changer",
+    "explication": "Un leader personnalise les valeurs de l'entreprise, démontrant un engagement envers la durabilité."
+  },
+  {
+    "level": "4: Transmission du Savoir",
+    "situation": "Un employé expérimenté prend sa retraite, laissant un vide de connaissances dans la préparation de certaines recettes. Vous allez",
+    "choice1": "Engager son remplaçant",
+    "choice2": "Partager son savoir",
+    "explication": "Un leader encourage le partage de connaissances. L'option B favorise la transmission du savoir et renforce la culture d'apprentissage au sein de l'équipe."
+  },
+  {
+    "level": "5: Récompenses",
+    "situation": "Un membre de l'équipe propose une idée qui améliore l'efficacité de la production et la qualité du pain.",
+    "choice1": "Reconnaitre l'idée",
+    "choice2": "Récompenser ",
+    "explication": "Un leader doit reconnaître et récompenser les contributions positives. L'option B encourage un environnement où les bonnes initiatives sont valorisées."
+  },
+  {
+    "level": "6: Encourager le Changement",
+    "situation": "Vous envisagez de mettre en œuvre une nouvelle méthode de gestion des stocks qui changera la façon dont l'équipe gère les ingrédients.",
+    "choice1": "Changer",
+    "choice2": "Consulter l'équipe",
+    "explication": "Un leader efficace doit expliquer et impliquer l'équipe dans le processus de changement. L'option B favorise la compréhension et l'acceptation du changement."
+  },
+  {
+    "level": "7: Prendre Soin de Soi",
+    "situation": "Vous remarquez que certains membres de l'équipe travaillent régulièrement des heures supplémentaires et semblent fatigués.",
+    "choice1": "Ignorer",
+    "choice2": "Aménager la charge",
+    "explication": "Un leader doit prendre soin de la santé et du bien-être de son équipe. L'option B montre une préoccupation pour le bien-être des employés."
+  },
+  {
+    "level": "8: Transparence",
+    "situation": "Vous êtes informé d'une situation financière difficile qui pourrait affecter les primes de fin d'année.",
+    "choice1": "Cacher l'information",
+    "choice2": "Discuter les solutions",
+    "explication": "Un leader communique de manière transparente même lorsque les nouvelles sont difficiles. L'option B favorise la confiance et la compréhension mutuelle."
+  },
+  {
+    "level": "9: Savoir écouter",
+    "situation": "Un membre de l'équipe exprime des préoccupations concernant la communication interne et le manque de clarté dans les directives.",
+    "choice1": "Minimiser les préoccupations",
+    "choice2": "Session de feedback",
+    "explication": "Un leader doit être un auditeur attentif. L'option B encourage la communication ouverte et l'amélioration continue."
+  },
+  {
+    "level": "10: Avoir des convictions",
+    "situation": "Vous avez pris une décision stratégique importante qui n'est pas populaire auprès de certains membres de l'équipe.",
+    "choice1": "Révoquer décision",
+    "choice2": "Expliquer les raisons",
+    "explication": "Un leader doit avoir des convictions et expliquer ses décisions. L'option B montre une prise de décision basée sur des convictions et une communication franche."
+  }
+]
