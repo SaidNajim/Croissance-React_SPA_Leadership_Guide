@@ -1,8 +1,9 @@
-export default function Level() {
-  var level = 1;
+import levels from '../data/levels.json';
+
+export default function Level({level}) {
   return (
     <div className="level">
-      Level {level}: Savoir Faire Confiance
+      Level {levels[level].title} 
     </div>
   )
 }

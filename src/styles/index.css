@@ -58,7 +58,7 @@ code {
 }
 
 .image {
-  width: 30vw;
+  height: 30vh;
 }
 
 .problem p {
@@ -67,10 +67,18 @@ code {
   font-size: 2.5em;
 }
 
+#situation {
+  width: 450px;
+  max-width: 100%;
+  margin: 0;
+}
+
 .choices {
   display: flex;
   flex-direction: row;
   margin: 0;
+  position: absolute;
+  bottom: 7vh;
 }
 
 .choices button {
