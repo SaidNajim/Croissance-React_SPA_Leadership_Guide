@@ -1,6 +1,6 @@
-import Title from './Title';
-import Level from './Level';
-import Problem from './Problem';
+import Title from './components/Title';
+import Level from './components/Level';
+import Problem from './components/Problem';
 
 function App() {
   return (
