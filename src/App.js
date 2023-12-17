@@ -1,6 +1,7 @@
 import Title from './components/Title';
 import Level from './components/Level';
 import Problem from './components/Problem';
+import Next from './components/Next';
 import { useState } from 'react';
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
 
       <Problem level={level} handleClick={handleClick} />
 
-      {/* Explication + Next */}
+      <Next level={level} handleClick={handleClick} />
     </div>
   );
 }

@@ -74,7 +74,7 @@ code {
 }
 
 .choices {
-  display: flex;
+  display: none;  /* Change to flex */
   flex-direction: row;
   margin: 0;
   position: absolute;
@@ -95,4 +95,39 @@ code {
 .choices button:hover {
   background-color: black;
   color: white;
+}
+
+.next {
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  top: 78%;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  border-top: .3em solid black;
+}
+
+.next p {
+  font-family: 'Just Another Hand', cursive;
+  font-weight: 400;
+  font-size: 2.3em;
+  padding: .3em;
+  margin: 0;
+}
+
+.explanation button p {
+  color: white;
+}
+
+.next button {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+}
+
+.next button:hover {
+  background-color: white;
+  color: black;
 }
