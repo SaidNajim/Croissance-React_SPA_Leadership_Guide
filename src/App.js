@@ -6,9 +6,13 @@ import { useState } from 'react';
 
 function App() {
   var [level, setLevel] = useState(0);
-
-  const handleClick = () => {
+  const incrementLevel = () => {
     setLevel((level + 1) % 10);
+  }
+
+  var [next, setNext] = useState(true);
+  const toogleDisplay = () => {
+    setNext(!next);
   }
 
   return (
@@ -17,9 +21,9 @@ function App() {
 
       <Level level={level} />
 
-      <Problem level={level} handleClick={handleClick} />
+      <Problem level={level} next={next} toogleDisplay={toogleDisplay} />
 
-      <Next level={level} handleClick={handleClick} />
+      <Next level={level} incrementLevel={incrementLevel} next={next} toogleDisplay={toogleDisplay} />
     </div>
   );
 }
