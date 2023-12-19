@@ -18,55 +18,55 @@
     "situation": "Votre boulangerie favorise la durabilité, mais le fournisseur utilise des emballages non écologiques. Préférez-vous rester ou changer de fournisseur?",
     "choice1": "Maintenir",
     "choice2": "Changer",
-    "explication": "Un leader personnalise les valeurs de l'entreprise, démontrant un engagement envers la durabilité."
+    "explication": "Un leader personnalise les valeurs de l'entreprise."
   },
   {
     "title": "4: Transmission du Savoir",
     "situation": "Un employé expérimenté prend sa retraite, laissant un vide de connaissances dans la préparation de certaines recettes. Vous allez",
     "choice1": "Engager son remplaçant",
     "choice2": "Partager son savoir",
-    "explication": "Un leader encourage le partage de connaissances. L'option B favorise la transmission du savoir et renforce la culture d'apprentissage au sein de l'équipe."
+    "explication": "Un leader encourage le partage de connaissances."
   },
   {
     "title": "5: Récompenses",
     "situation": "Un membre de l'équipe propose une idée qui améliore l'efficacité de la production et la qualité du pain.",
     "choice1": "Reconnaitre l'idée",
     "choice2": "Récompenser ",
-    "explication": "Un leader doit reconnaître et récompenser les contributions positives. L'option B encourage un environnement où les bonnes initiatives sont valorisées."
+    "explication": "Un leader doit reconnaître et récompenser les contributions positives."
   },
   {
     "title": "6: Encourager le Changement",
     "situation": "Vous envisagez de mettre en œuvre une nouvelle méthode de gestion des stocks qui changera la façon dont l'équipe gère les ingrédients.",
     "choice1": "Changer",
     "choice2": "Consulter l'équipe",
-    "explication": "Un leader efficace doit expliquer et impliquer l'équipe dans le processus de changement. L'option B favorise la compréhension et l'acceptation du changement."
+    "explication": "Un leader efficace doit expliquer et impliquer l'équipe dans le processus de changement."
   },
   {
     "title": "7: Prendre Soin de Soi",
     "situation": "Vous remarquez que certains membres de l'équipe travaillent régulièrement des heures supplémentaires et semblent fatigués.",
     "choice1": "Ignorer",
     "choice2": "Aménager la charge",
-    "explication": "Un leader doit prendre soin de la santé et du bien-être de son équipe. L'option B montre une préoccupation pour le bien-être des employés."
+    "explication": "Un leader doit prendre soin de la santé et du bien-être de son équipe."
   },
   {
     "title": "8: Transparence",
     "situation": "Vous êtes informé d'une situation financière difficile qui pourrait affecter les primes de fin d'année.",
     "choice1": "Cacher l'information",
     "choice2": "Discuter les solutions",
-    "explication": "Un leader communique de manière transparente même lorsque les nouvelles sont difficiles. L'option B favorise la confiance et la compréhension mutuelle."
+    "explication": "Un leader communique de manière transparente même lorsque les nouvelles sont difficiles."
   },
   {
     "title": "9: Savoir écouter",
     "situation": "Un membre de l'équipe exprime des préoccupations concernant la communication interne et le manque de clarté dans les directives.",
     "choice1": "Minimiser les préoccupations",
     "choice2": "Session de feedback",
-    "explication": "Un leader doit être un auditeur attentif. L'option B encourage la communication ouverte et l'amélioration continue."
+    "explication": "Un leader doit être un auditeur attentif."
   },
   {
     "title": "10: Avoir des convictions",
     "situation": "Vous avez pris une décision stratégique importante qui n'est pas populaire auprès de certains membres de l'équipe.",
     "choice1": "Révoquer décision",
     "choice2": "Expliquer les raisons",
-    "explication": "Un leader doit avoir des convictions et expliquer ses décisions. L'option B montre une prise de décision basée sur des convictions et une communication franche."
+    "explication": "Un leader doit avoir des convictions et expliquer ses décisions."
   }
 ]
