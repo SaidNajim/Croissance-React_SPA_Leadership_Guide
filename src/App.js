@@ -1,11 +1,11 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { MemoryRouter, Route, Routes } from "react-router-dom";
 import Game from "./pages/Game";
 import End from "./pages/End";
 import Error from "./pages/Error";
 
 function App() {
   return (
-    <BrowserRouter>
+    <MemoryRouter>
       <div className="App">
         <Routes>
           <Route path="/" element={<Game />} />
@@ -13,7 +13,7 @@ function App() {
           <Route path="*" element={<Error />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </MemoryRouter>
   );
 }
 

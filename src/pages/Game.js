@@ -3,10 +3,16 @@ import Level from '../components/Level';
 import Problem from '../components/Problem';
 import Next from '../components/Next';
 import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 export default function Game() {
-  var [level, setLevel] = useState(0);
+  const navigate = useNavigate();
+
+  var [level, setLevel] = useState(9);
   const incrementLevel = () => {
+    if (level === 9) {
+      navigate("/end");
+    }
     setLevel((level + 1) % 10);
   }
 
