@@ -2,17 +2,22 @@ import Title from '../components/Title';
 import Level from '../components/Level';
 import Problem from '../components/Problem';
 import Next from '../components/Next';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 
 export default function Game() {
   const navigate = useNavigate();
 
-  var [level, setLevel] = useState(9);
+  var [level, setLevel] = useState(0);
+
+  useEffect(() => {
+    localStorage.setItem('level', JSON.stringify(level));
+  }, [level]);
+
   const incrementLevel = () => {
-    if (level === 9) {
-      navigate("/end");
-    }
+    // if (level === 9) {
+    //   navigate("/end");
+    // }
     setLevel((level + 1) % 10);
   }
 
