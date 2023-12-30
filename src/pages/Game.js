@@ -2,26 +2,23 @@ import Title from '../components/Title';
 import Level from '../components/Level';
 import Problem from '../components/Problem';
 import Next from '../components/Next';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+// import { useLevelContext } from '../data/localLevel'
 import { useNavigate } from "react-router-dom";
 
 export default function Game() {
   const navigate = useNavigate();
-
-  var [level, setLevel] = useState(0);
-
-  useEffect(() => {
-    localStorage.setItem('level', JSON.stringify(level));
-  }, [level]);
-
+  const [level, setLevel] = useState(0);
+  // const [level, setLevel] = useLevelContext();
+  console.log('Level:', level);
   const incrementLevel = () => {
-    // if (level === 9) {
-    //   navigate("/end");
-    // }
+    if (level === 9) {
+      navigate("/end");
+    }
     setLevel((level + 1) % 10);
   }
 
-  var [next, setNext] = useState(true);
+  const [next, setNext] = useState(true);
   const toogleDisplay = () => {
     setNext(!next);
   }
