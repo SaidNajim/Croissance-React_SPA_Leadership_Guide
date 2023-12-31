@@ -2,9 +2,14 @@ import { MemoryRouter, Route, Routes } from "react-router-dom";
 import Game from "./pages/Game";
 import End from "./pages/End";
 import Error from "./pages/Error";
+import { LevelContext } from './data/LevelContext';
+import { useState } from "react";
 
 function App() {
+  const [level, setLevel] = useState(0);
+
   return (
+    <LevelContext.Provider value={{level, setLevel}}>
     <MemoryRouter>
       <div className="App">
         <Routes>
@@ -14,6 +19,7 @@ function App() {
         </Routes>
       </div>
     </MemoryRouter>
+    </LevelContext.Provider>
   );
 }
 
