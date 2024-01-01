@@ -1,7 +1,7 @@
 import levels from '../data/levels.json';
 import { useNavigate } from "react-router-dom";
 
-export default function Next({level, setLevel, next, toogleChoiceMade}) {
+export default function Next({level, setLevel, choiceMade, toogleChoiceMade}) {
   const navigate = useNavigate();
 
   const incrementLevel = () => {
@@ -17,7 +17,7 @@ export default function Next({level, setLevel, next, toogleChoiceMade}) {
   }
 
   return (
-    <div className='next' style={{display: next ? 'none' : 'flex' }}>
+    <div className='next' style={{display: choiceMade ? 'flex' : 'none' }}>
       <div className="explanation">
         <p>{levels[level].explication}</p>
       </div>
