@@ -1,13 +1,23 @@
 import levels from '../data/levels.json';
+import { useNavigate } from "react-router-dom";
 
-export default function Next({level, incrementLevel, next, toogleDisplay}) {
+export default function Next({level, setLevel, choiceMade, toogleChoiceMade}) {
+  const navigate = useNavigate();
+
+  const incrementLevel = () => {
+    if (level === 9) {
+      navigate("/end");
+    }
+    setLevel((level + 1) % 10);
+  }
+  
   const handleNext = () => {
-    toogleDisplay();
+    toogleChoiceMade();
     incrementLevel();
   }
 
   return (
-    <div className='next' style={{display: next ? 'none' : 'flex' }}>
+    <div className='next' style={{display: choiceMade ? 'flex' : 'none' }}>
       <div className="explanation">
         <p>{levels[level].explication}</p>
       </div>

@@ -2,36 +2,23 @@ import Title from '../components/Title';
 import Level from '../components/Level';
 import Problem from '../components/Problem';
 import Next from '../components/Next';
-import { useState, useEffect } from 'react';
-import { useNavigate } from "react-router-dom";
+import { useState, useContext } from 'react';
+// import { useLevelContext } from '../data/localLevel'
+import { LevelContext } from '../data/LevelContext';
 
 export default function Game() {
-  const navigate = useNavigate();
+  const {level, setLevel} = useContext(LevelContext);
 
-  var [level, setLevel] = useState(0);
-
-  useEffect(() => {
-    localStorage.setItem('level', JSON.stringify(level));
-  }, [level]);
-
-  const incrementLevel = () => {
-    // if (level === 9) {
-    //   navigate("/end");
-    // }
-    setLevel((level + 1) % 10);
-  }
-
-  var [next, setNext] = useState(true);
-  const toogleDisplay = () => {
-    setNext(!next);
-  }
+  // Check if the user makes a choice
+  const [choiceMade, setChoiceMade] = useState(false);
+  const toogleChoiceMade = () => { setChoiceMade(!choiceMade); }
 
   return (
     <div className='game'>
-      <Title level={level} />
+      <Title />
       <Level level={level} />
-      <Problem level={level} next={next} toogleDisplay={toogleDisplay} />
-      <Next level={level} incrementLevel={incrementLevel} next={next} toogleDisplay={toogleDisplay} />
+      <Problem level={level} choiceMade={choiceMade} toogleChoiceMade={toogleChoiceMade} />
+      <Next level={level} setLevel={setLevel} choiceMade={choiceMade} toogleChoiceMade={toogleChoiceMade} />
     </div>
   )
 }

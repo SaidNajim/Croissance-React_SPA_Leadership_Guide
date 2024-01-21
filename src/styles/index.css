@@ -131,3 +131,61 @@ code {
   background-color: white;
   color: black;
 }
+
+.end {
+  width: 100%;
+  text-align: center;
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+ 60% { transform: rotate(0deg); }
+ 65% { transform: rotate(5deg); }
+ 85% { transform: rotate(-5deg); }
+100% { transform: rotate(0deg); }
+}
+
+img.wiggle {
+  display: inline-block;
+  animation: wiggle 5s infinite;
+  margin-top: 10vh;
+  height: 30vh;
+}
+
+.end-btns button {
+  border-radius: 4px;
+  background-color: white;
+  margin: 2em;
+}
+
+.end-btns button p {
+  font-family: 'Just Another Hand', cursive;
+  font-weight: 400;
+  font-size: 2.8em;
+  padding: .3em;
+  margin: 0;
+}
+
+.end-btns button:hover {
+  background-color: black;
+  color: white;
+}
+
+.credits {
+  font-family: 'Just Another Hand', cursive;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.credits h3, a {
+  font-weight: 100;
+  text-decoration: none;
+}
+
+#madeBy {
+  text-shadow: rgb(112, 110, 99) 5px 0 20px;
+}
+
+#madeBy a:hover {
+  text-shadow: rgb(112, 110, 99) 5px 0 20px, rgb(112, 110, 99) -5px 0 20px;
+}
