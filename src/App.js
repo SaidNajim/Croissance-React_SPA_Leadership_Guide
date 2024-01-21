@@ -3,6 +3,8 @@ import Game from "./pages/Game";
 import End from "./pages/End";
 import { LevelContext } from './data/LevelContext';
 import { useState, useEffect } from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [level, setLevel] = useState(() => {
@@ -19,11 +21,14 @@ function App() {
     <MemoryRouter>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Game />} />
-          <Route path="/end" element={<End />} />
+          <Route path="/end" element={<Game />} />
+          <Route path="/" element={<End />} />
         </Routes>
       </div>
     </MemoryRouter>
+      <ToastContainer position="bottom-center" autoClose={3000} 
+        hideProgressBar newestOnTop={false} closeOnClick rtl={false} 
+        pauseOnFocusLoss draggable pauseOnHover theme="colored" />
     </LevelContext.Provider>
   );
 }
