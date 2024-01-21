@@ -6,7 +6,7 @@ import bread from '../images/bread.png';
 export default function End() {
   const navigate = useNavigate(); 
   const reset = () => {
-    navigate("/end");
+    navigate("/");
   } 
 
   const share = () => {
