@@ -21,8 +21,8 @@ function App() {
     <MemoryRouter>
       <div className="App">
         <Routes>
-          <Route path="/end" element={<Game />} />
-          <Route path="/" element={<End />} />
+          <Route path="/" element={<Game />} />
+          <Route path="/end" element={<End />} />
         </Routes>
       </div>
     </MemoryRouter>
